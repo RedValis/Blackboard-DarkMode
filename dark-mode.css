@@ -548,6 +548,13 @@ html.ku-dark-mode .base-recent-activity .activity-stream .activity-group .stream
   background-color: var(--ku-surface-2) !important;
 }
 
+html.ku-dark-mode .base-recent-activity .activity-stream .activity-group .stream-item .element-card.stream-panel-activity-card,
+html.ku-dark-mode .base-recent-activity .activity-stream .activity-group .stream-item .element-card.stream-panel-activity-card .element-details,
+html.ku-dark-mode .base-recent-activity .activity-stream .activity-group .stream-item .element-card.stream-panel-activity-card .element-details.course-color-classic {
+  background-color: var(--ku-bg) !important;
+  border-color: transparent !important;
+}
+
 html.ku-dark-mode .base-recent-activity .activity-stream .activity-group .stream-item:hover .element-image,
 html.ku-dark-mode .base-recent-activity .activity-stream .activity-group .stream-item:focus-within .element-image {
   background-color: var(--ku-surface-3) !important;
@@ -925,4 +932,40 @@ html.ku-dark-mode p.noItems#blocklist\:\:3-dueView\:\:\:\:\:3-dueView_1 {
   background-image: none !important;
   color: var(--ku-text-soft) !important;
   border-color: var(--ku-border) !important;
+}
+
+html.ku-dark-mode #filterby,
+html.ku-dark-mode #filterby li,
+html.ku-dark-mode #filterby a {
+  background-color: var(--ku-surface) !important;
+  border-color: var(--ku-border) !important;
+  color: var(--ku-text-soft) !important;
+  box-shadow: none !important;
+}
+
+html.ku-dark-mode #filterby a.active,
+html.ku-dark-mode #filterby a:hover,
+html.ku-dark-mode #filterby a:focus {
+  background-color: var(--ku-surface-2) !important;
+  border-color: var(--ku-border-strong) !important;
+  color: var(--ku-text) !important;
+}
+
+html.ku-dark-mode .sortable_item_row,
+html.ku-dark-mode .graded_item_row,
+html.ku-dark-mode .sortable_item_row .cell,
+html.ku-dark-mode .graded_item_row .cell {
+  background-color: transparent !important;
+  border-color: var(--ku-border) !important;
+  color: var(--ku-text-soft) !important;
+}
+
+html.ku-dark-mode .sortable_item_row:hover,
+html.ku-dark-mode .sortable_item_row:hover .cell,
+html.ku-dark-mode .graded_item_row:hover,
+html.ku-dark-mode .graded_item_row:hover .cell,
+html.ku-dark-mode .sortable_item_row.row.expanded:hover,
+html.ku-dark-mode .sortable_item_row.row.expanded:hover .cell {
+  background-color: var(--ku-surface-2) !important;
+  color: var(--ku-text) !important;
 }
