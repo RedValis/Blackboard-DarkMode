@@ -327,6 +327,7 @@ html.ku-dark-mode [class*='MuiOutlinedInputnotchedOutline'] {
 }
 
 html.ku-dark-mode #streams-filter-label,
+html.ku-dark-mode #courses-overview-filter-search-label,
 html.ku-dark-mode #courses-overview-filter-terms-label,
 html.ku-dark-mode #courses-overview-filter-filters-label {
   color: var(--ku-text-muted) !important;
@@ -334,6 +335,7 @@ html.ku-dark-mode #courses-overview-filter-filters-label {
 }
 
 html.ku-dark-mode #streams-filter-label::before,
+html.ku-dark-mode #courses-overview-filter-search-label::before,
 html.ku-dark-mode #courses-overview-filter-terms-label::before,
 html.ku-dark-mode #courses-overview-filter-filters-label::before {
   background: linear-gradient(
@@ -347,6 +349,8 @@ html.ku-dark-mode #courses-overview-filter-filters-label::before {
 
 html.ku-dark-mode #streams-filter-label + div fieldset,
 html.ku-dark-mode #streams-filter-label + div legend,
+html.ku-dark-mode #courses-overview-filter-search-label + div fieldset,
+html.ku-dark-mode #courses-overview-filter-search-label + div legend,
 html.ku-dark-mode #courses-overview-filter-terms-label + div fieldset,
 html.ku-dark-mode #courses-overview-filter-terms-label + div legend,
 html.ku-dark-mode #courses-overview-filter-filters-label + div fieldset,
@@ -355,6 +359,7 @@ html.ku-dark-mode #courses-overview-filter-filters-label + div legend {
 }
 
 html.ku-dark-mode #streams-filter-label + div [class*='PrivateNotchedOutlinelegend'] > span,
+html.ku-dark-mode #courses-overview-filter-search-label + div [class*='PrivateNotchedOutlinelegend'] > span,
 html.ku-dark-mode #courses-overview-filter-terms-label + div [class*='PrivateNotchedOutlinelegend'] > span,
 html.ku-dark-mode #courses-overview-filter-filters-label + div [class*='PrivateNotchedOutlinelegend'] > span {
   background-color: var(--ku-surface-2) !important;
@@ -412,12 +417,23 @@ html.ku-dark-mode .course-type,
 html.ku-dark-mode .course-status,
 html.ku-dark-mode .multi-users-title,
 html.ku-dark-mode .view-users,
+html.ku-dark-mode .instructors .ellipsis,
+html.ku-dark-mode .instructors bb-username,
+html.ku-dark-mode .instructors .bb-ui-username,
+html.ku-dark-mode .instructors [class*='makeStylesbaseText'],
 html.ku-dark-mode .makeStylesinputLabel-0-2-370,
 html.ku-dark-mode .makeStyleslabel-0-2-280,
 html.ku-dark-mode .makeStyleshideOffScreen-0-2-278,
 html.ku-dark-mode .makeStyleshideOffScreen-0-2-651 {
   color: var(--ku-text-muted) !important;
   background-color: transparent !important;
+}
+
+html.ku-dark-mode .instructors .ellipsis,
+html.ku-dark-mode .instructors bb-username,
+html.ku-dark-mode .instructors .bb-ui-username,
+html.ku-dark-mode .instructors [class*='makeStylesbaseText'] {
+  color: var(--ku-link) !important;
 }
 
 html.ku-dark-mode table,
