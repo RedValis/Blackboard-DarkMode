@@ -461,6 +461,18 @@ html.ku-dark-mode [class*='calendar'] {
   color: var(--ku-text) !important;
 }
 
+html.ku-dark-mode .element-card-container.deadline-course {
+  background-color: var(--ku-bg) !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+html.ku-dark-mode .element-card-container.deadline-course > .element-card.due-item,
+html.ku-dark-mode .element-card-container.deadline-course > .element-card.element-card-deadline {
+  background-color: var(--ku-surface) !important;
+  border-color: var(--ku-border) !important;
+}
+
 html.ku-dark-mode institution-page-home .module-wrapper__content:has(> .image-links-component__container),
 html.ku-dark-mode institution-page-home .module-wrapper__content:has(> .image-links-component__container) .module-wrapper__header,
 html.ku-dark-mode institution-page-home .module-wrapper__content:has(> .image-links-component__container) .module-wrapper__header-left,
