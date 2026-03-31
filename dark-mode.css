@@ -488,3 +488,331 @@ html.ku-dark-mode .base-recent-activity .activity-stream .activity-group span.he
 html.ku-dark-mode *:focus-visible {
   outline-color: var(--ku-focus) !important;
 }
+
+html.ku-dark-mode .classic-learn-wrapper,
+html.ku-dark-mode .iframe-wrapper.classic-panel-content,
+html.ku-dark-mode .classic-learn-iframe {
+  background-color: var(--ku-bg) !important;
+  border-color: var(--ku-border) !important;
+}
+
+html.ku-dark-mode .navigationPane,
+html.ku-dark-mode .menuWrap,
+html.ku-dark-mode #menuWrap-inner,
+html.ku-dark-mode #courseMenuPalette,
+html.ku-dark-mode #courseMenuPalette .navPaletteContent,
+html.ku-dark-mode #courseMenuPalette .navPaletteTitle,
+html.ku-dark-mode #courseMenuPalette_paletteTitleHeading,
+html.ku-dark-mode #puller {
+  background-color: var(--ku-sidebar) !important;
+  border-color: var(--ku-border) !important;
+}
+
+html.ku-dark-mode #courseMenu_link,
+html.ku-dark-mode #courseMenu_combo,
+html.ku-dark-mode #courseMenuPalette a,
+html.ku-dark-mode #courseMenuPalette span,
+html.ku-dark-mode #courseMenuPalette .navPaletteContent h2,
+html.ku-dark-mode #courseMenuPalette .navPaletteContent h3,
+html.ku-dark-mode #courseMenuPalette .navPaletteContent h4 {
+  color: var(--ku-text-soft) !important;
+}
+
+html.ku-dark-mode #courseMenuPalette a:hover,
+html.ku-dark-mode #courseMenuPalette a:focus-visible,
+html.ku-dark-mode #courseMenuPalette a:hover span,
+html.ku-dark-mode #courseMenuPalette a:focus-visible span {
+  color: var(--ku-link-hover) !important;
+}
+
+html.ku-dark-mode #courseMenuPalette_contents > li,
+html.ku-dark-mode #courseMenuPalette_contents > li > a {
+  background-color: transparent !important;
+  border-color: var(--ku-border) !important;
+}
+
+html.ku-dark-mode #courseMenuPalette_contents > li:hover,
+html.ku-dark-mode #courseMenuPalette_contents > li:focus-within,
+html.ku-dark-mode #courseMenuPalette_contents > li[class*='active'],
+html.ku-dark-mode #courseMenuPalette_contents > li[class*='current'] {
+  background-color: var(--ku-sidebar-2) !important;
+}
+
+html.ku-dark-mode #courseMenuPalette_contents > li.divider,
+html.ku-dark-mode #courseMenuPalette_contents > li.divider hr {
+  background-color: transparent !important;
+  border-color: var(--ku-border) !important;
+}
+
+html.ku-dark-mode #contentPanel,
+html.ku-dark-mode #contentPanel .shadow,
+html.ku-dark-mode #contentPanel #editmodeWrapper,
+html.ku-dark-mode #contentPanel .container,
+html.ku-dark-mode #contentPanel .contentBox,
+html.ku-dark-mode #contentPanel #content {
+  background-color: var(--ku-bg) !important;
+  border-color: var(--ku-border) !important;
+}
+
+html.ku-dark-mode #pageTitleBar,
+html.ku-dark-mode #pageTitleBar.pageTitleIcon,
+html.ku-dark-mode .pageTitle,
+html.ku-dark-mode #pageTitleHeader {
+  background-color: var(--ku-surface) !important;
+  border-color: var(--ku-border) !important;
+  color: var(--ku-text) !important;
+}
+
+html.ku-dark-mode #pageTitleText,
+html.ku-dark-mode #pageTitleText span,
+html.ku-dark-mode #pageTitleHeader span,
+html.ku-dark-mode #contentPanel [style*='color:#000'],
+html.ku-dark-mode #contentPanel [style*='color: rgb(0, 0, 0)'] {
+  color: var(--ku-text) !important;
+}
+
+html.ku-dark-mode ul#content_listContainer {
+  background-color: transparent !important;
+  border-color: var(--ku-border) !important;
+}
+
+html.ku-dark-mode ul#content_listContainer > li.liItem {
+  background-color: var(--ku-surface) !important;
+  border-color: var(--ku-border) !important;
+  box-shadow: none !important;
+}
+
+html.ku-dark-mode ul#content_listContainer > li.liItem:hover,
+html.ku-dark-mode ul#content_listContainer > li.liItem:focus-within {
+  background-color: var(--ku-surface-2) !important;
+}
+
+html.ku-dark-mode ul#content_listContainer > li.liItem > .item,
+html.ku-dark-mode ul#content_listContainer > li.liItem .details,
+html.ku-dark-mode ul#content_listContainer > li.liItem .alignPanel,
+html.ku-dark-mode ul#content_listContainer > li.liItem .vtbegenerated,
+html.ku-dark-mode ul#content_listContainer > li.liItem ul.attachments {
+  background-color: transparent !important;
+  border-color: var(--ku-border) !important;
+  color: var(--ku-text-soft) !important;
+}
+
+html.ku-dark-mode ul#content_listContainer > li.liItem h3,
+html.ku-dark-mode ul#content_listContainer > li.liItem .details,
+html.ku-dark-mode ul#content_listContainer > li.liItem .details *,
+html.ku-dark-mode ul#content_listContainer > li.liItem .item > span,
+html.ku-dark-mode ul#content_listContainer > li.liItem .item > div {
+  color: var(--ku-text-soft) !important;
+}
+
+html.ku-dark-mode ul#content_listContainer > li.liItem a,
+html.ku-dark-mode ul#content_listContainer > li.liItem a span,
+html.ku-dark-mode ul#content_listContainer > li.liItem h3 a,
+html.ku-dark-mode ul#content_listContainer > li.liItem h3 span[style] {
+  color: var(--ku-link) !important;
+}
+
+html.ku-dark-mode ul#content_listContainer > li.liItem a:hover,
+html.ku-dark-mode ul#content_listContainer > li.liItem a:hover span,
+html.ku-dark-mode ul#content_listContainer > li.liItem h3 a:hover {
+  color: var(--ku-link-hover) !important;
+}
+
+html.ku-dark-mode #titleicon,
+html.ku-dark-mode img.item_icon,
+html.ku-dark-mode #courseMenu_combo img,
+html.ku-dark-mode #courseMenuPalette .actionBarMicro img {
+  filter: brightness(0) saturate(100%) invert(92%) sepia(11%) saturate(413%) hue-rotate(181deg) brightness(102%) contrast(96%) !important;
+}
+
+html.ku-dark-mode .portalPane,
+html.ku-dark-mode .containerPortal,
+html.ku-dark-mode .portlet,
+html.ku-dark-mode .portlet .container,
+html.ku-dark-mode .module,
+html.ku-dark-mode .moduleSample,
+html.ku-dark-mode .box,
+html.ku-dark-mode .boxBorder,
+html.ku-dark-mode .mybb,
+html.ku-dark-mode .mybb .container,
+html.ku-dark-mode #module,
+html.ku-dark-mode #column0,
+html.ku-dark-mode #column1,
+html.ku-dark-mode #column2,
+html.ku-dark-mode [id^='column'],
+html.ku-dark-mode .portletList-img,
+html.ku-dark-mode .portletList,
+html.ku-dark-mode .portletList-img > li,
+html.ku-dark-mode .portletList > li,
+html.ku-dark-mode .dashboard,
+html.ku-dark-mode .dashboard .container {
+  background-color: var(--ku-surface) !important;
+  border-color: var(--ku-border) !important;
+  color: var(--ku-text-soft) !important;
+  box-shadow: none !important;
+}
+
+html.ku-dark-mode .portlet h2,
+html.ku-dark-mode .portlet h3,
+html.ku-dark-mode .module h2,
+html.ku-dark-mode .module h3,
+html.ku-dark-mode .box h2,
+html.ku-dark-mode .box h3,
+html.ku-dark-mode .mybb h2,
+html.ku-dark-mode .mybb h3,
+html.ku-dark-mode .portlet .subHeader,
+html.ku-dark-mode .portlet .stepTitle {
+  background-color: var(--ku-surface-2) !important;
+  border-color: var(--ku-border) !important;
+  color: var(--ku-text) !important;
+}
+
+html.ku-dark-mode .portlet .container *,
+html.ku-dark-mode .moduleSample *,
+html.ku-dark-mode .portletList-img *,
+html.ku-dark-mode .portletList * {
+  border-color: var(--ku-border) !important;
+}
+
+html.ku-dark-mode .portlet a,
+html.ku-dark-mode .module a,
+html.ku-dark-mode .mybb a,
+html.ku-dark-mode .portletList-img a,
+html.ku-dark-mode .portletList a {
+  color: var(--ku-link) !important;
+}
+
+html.ku-dark-mode .portlet a:hover,
+html.ku-dark-mode .module a:hover,
+html.ku-dark-mode .mybb a:hover,
+html.ku-dark-mode .portletList-img a:hover,
+html.ku-dark-mode .portletList a:hover {
+  color: var(--ku-link-hover) !important;
+}
+
+html.ku-dark-mode .portlet .actionMenuButton,
+html.ku-dark-mode .portlet .mainButton > a,
+html.ku-dark-mode .portlet .secondaryButton > a,
+html.ku-dark-mode .portlet .mainButton h2 > a,
+html.ku-dark-mode .portlet .secondaryButton h2 > a,
+html.ku-dark-mode .portlet .button-5,
+html.ku-dark-mode .portlet .button-5-img,
+html.ku-dark-mode .portlet input.genericButton,
+html.ku-dark-mode .portlet input[type='submit'].genericButton,
+html.ku-dark-mode .portlet input[type='button'].genericButton {
+  background: var(--ku-surface-2) !important;
+  background-color: var(--ku-surface-2) !important;
+  background-image: none !important;
+  border-color: var(--ku-border-strong) !important;
+  color: var(--ku-text-soft) !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+}
+
+html.ku-dark-mode .portlet .actionMenuButton:hover,
+html.ku-dark-mode .portlet .actionMenuButton:focus,
+html.ku-dark-mode .portlet .mainButton > a:hover,
+html.ku-dark-mode .portlet .secondaryButton > a:hover,
+html.ku-dark-mode .portlet .mainButton h2 > a:hover,
+html.ku-dark-mode .portlet .secondaryButton h2 > a:hover,
+html.ku-dark-mode .portlet .button-5:hover,
+html.ku-dark-mode .portlet .button-5-img:hover,
+html.ku-dark-mode .portlet input.genericButton:hover,
+html.ku-dark-mode .portlet input[type='submit'].genericButton:hover,
+html.ku-dark-mode .portlet input[type='button'].genericButton:hover,
+html.ku-dark-mode .portlet .mainButton > a:focus-visible,
+html.ku-dark-mode .portlet .secondaryButton > a:focus-visible,
+html.ku-dark-mode .portlet .mainButton h2 > a:focus-visible,
+html.ku-dark-mode .portlet .secondaryButton h2 > a:focus-visible {
+  background: var(--ku-surface-3) !important;
+  background-color: var(--ku-surface-3) !important;
+  color: var(--ku-text) !important;
+}
+
+html.ku-dark-mode .portlet .dateSelector,
+html.ku-dark-mode .portlet .portletBlock h4,
+html.ku-dark-mode .portlet div.blockContents h4,
+html.ku-dark-mode .portlet .blockGroups .itemHead,
+html.ku-dark-mode .portlet a.itemHead,
+html.ku-dark-mode .portlet .subCategories li a {
+  background-color: var(--ku-surface-2) !important;
+  border-color: var(--ku-border) !important;
+  color: var(--ku-text) !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+}
+
+html.ku-dark-mode .portlet .dateSelector input,
+html.ku-dark-mode .portlet .dateSelector select {
+  background-color: var(--ku-surface-3) !important;
+  border-color: var(--ku-border-strong) !important;
+  color: var(--ku-text) !important;
+  box-shadow: none !important;
+}
+
+html.ku-dark-mode .portlet .accordion_content,
+html.ku-dark-mode .portlet .accordionContent,
+html.ku-dark-mode .portlet ul.itemGroups li ul.items {
+  background-color: var(--ku-surface) !important;
+  border-color: var(--ku-border) !important;
+  color: var(--ku-text-soft) !important;
+  box-shadow: none !important;
+}
+
+html.ku-dark-mode .portlet .accordion_content li,
+html.ku-dark-mode .portlet .accordionContent li,
+html.ku-dark-mode .portlet ul.itemGroups li,
+html.ku-dark-mode .portlet .blockContents ul li {
+  background-color: transparent !important;
+  border-color: var(--ku-border) !important;
+}
+
+html.ku-dark-mode .portlet .accordion_content a,
+html.ku-dark-mode .portlet .accordionContent a,
+html.ku-dark-mode .portlet ul.itemGroups li ul.items li a {
+  color: var(--ku-link) !important;
+}
+
+html.ku-dark-mode .portlet .accordion_content a:hover,
+html.ku-dark-mode .portlet .accordionContent a:hover,
+html.ku-dark-mode .portlet ul.itemGroups li ul.items li a:hover {
+  color: var(--ku-link-hover) !important;
+}
+
+html.ku-dark-mode .portlet .noItems,
+html.ku-dark-mode .portlet .accordion_content .noItems,
+html.ku-dark-mode .portlet .accordionContent .noItems,
+html.ku-dark-mode .portlet .portletInfoFooter,
+html.ku-dark-mode .portlet .dateSelector,
+html.ku-dark-mode .portlet .dateSelector label {
+  color: var(--ku-text-soft) !important;
+}
+
+html.ku-dark-mode .cmdiv,
+html.ku-dark-mode .menumini,
+html.ku-dark-mode div[id*='actionMenu_'] {
+  background-color: var(--ku-surface-2) !important;
+  border-color: var(--ku-border-strong) !important;
+  box-shadow: none !important;
+}
+
+html.ku-dark-mode .cmdiv ul,
+html.ku-dark-mode .menumini ul {
+  background-color: transparent !important;
+  border-color: var(--ku-border) !important;
+}
+
+html.ku-dark-mode .cmdiv a,
+html.ku-dark-mode .menumini a {
+  background: transparent !important;
+  color: var(--ku-text-soft) !important;
+  border-color: var(--ku-border) !important;
+}
+
+html.ku-dark-mode .cmdiv a:hover,
+html.ku-dark-mode .cmdiv a:focus,
+html.ku-dark-mode .menumini a:hover,
+html.ku-dark-mode .menumini a:focus {
+  background-color: var(--ku-surface-3) !important;
+  color: var(--ku-text) !important;
+}

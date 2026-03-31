@@ -28,6 +28,14 @@
     } catch {}
   }
 
+  function isTopWindow() {
+    try {
+      return window.top === window;
+    } catch {
+      return false;
+    }
+  }
+
   function updateButton() {
     const btn = document.getElementById(BTN_ID);
     if (!btn) return;
@@ -45,6 +53,11 @@
   function toggleDarkMode() {
     applyDarkMode(!isDarkMode);
     savePreference(isDarkMode);
+  }
+
+  function handleStorageSync(event) {
+    if (event.key !== STORAGE_KEY) return;
+    applyDarkMode(event.newValue === 'true');
   }
 
   function createButton() {
@@ -83,6 +96,10 @@
 
   function init() {
     applyDarkMode(loadPreference());
+    window.addEventListener('storage', handleStorageSync);
+
+    if (!isTopWindow()) return;
+
     if (injectButton()) return;
 
     const observer = new MutationObserver(() => {
