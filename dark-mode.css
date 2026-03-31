@@ -222,6 +222,24 @@ html.ku-dark-mode [class*='course-card']:hover {
   background-color: var(--ku-surface-2) !important;
 }
 
+html.ku-dark-mode [class*='mainContainer'],
+html.ku-dark-mode [class*='toggleContainer'],
+html.ku-dark-mode [class*='filtersContainer'],
+html.ku-dark-mode [class*='filtersDropdown'],
+html.ku-dark-mode [class*='paginationSizeSelector'],
+html.ku-dark-mode [class*='pageSizeContainer'],
+html.ku-dark-mode .page-size-component {
+  background-color: var(--ku-bg) !important;
+  border-color: transparent !important;
+}
+
+html.ku-dark-mode .course-card-term-name,
+html.ku-dark-mode .course-card-term-name h3,
+html.ku-dark-mode .course-card-term-name .others-label {
+  background-color: var(--ku-bg) !important;
+  border-color: transparent !important;
+}
+
 html.ku-dark-mode .course-banner,
 html.ku-dark-mode .image-div,
 html.ku-dark-mode .term-header,
@@ -306,6 +324,41 @@ html.ku-dark-mode [class*='MuiOutlinedInputnotchedOutline'] {
   border-color: var(--ku-border) !important;
   background-color: var(--ku-bg) !important;
   box-shadow: none !important;
+}
+
+html.ku-dark-mode #streams-filter-label,
+html.ku-dark-mode #courses-overview-filter-terms-label,
+html.ku-dark-mode #courses-overview-filter-filters-label {
+  color: var(--ku-text-muted) !important;
+  background-color: transparent !important;
+}
+
+html.ku-dark-mode #streams-filter-label::before,
+html.ku-dark-mode #courses-overview-filter-terms-label::before,
+html.ku-dark-mode #courses-overview-filter-filters-label::before {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) 49%,
+    var(--ku-surface-2) 50%,
+    var(--ku-surface-2) 100%
+  ) !important;
+}
+
+html.ku-dark-mode #streams-filter-label + div fieldset,
+html.ku-dark-mode #streams-filter-label + div legend,
+html.ku-dark-mode #courses-overview-filter-terms-label + div fieldset,
+html.ku-dark-mode #courses-overview-filter-terms-label + div legend,
+html.ku-dark-mode #courses-overview-filter-filters-label + div fieldset,
+html.ku-dark-mode #courses-overview-filter-filters-label + div legend {
+  background-color: transparent !important;
+}
+
+html.ku-dark-mode #streams-filter-label + div [class*='PrivateNotchedOutlinelegend'] > span,
+html.ku-dark-mode #courses-overview-filter-terms-label + div [class*='PrivateNotchedOutlinelegend'] > span,
+html.ku-dark-mode #courses-overview-filter-filters-label + div [class*='PrivateNotchedOutlinelegend'] > span {
+  background-color: var(--ku-surface-2) !important;
+  color: var(--ku-text-muted) !important;
 }
 
 html.ku-dark-mode .MuiInputAdornmentroot-0-2-340,
