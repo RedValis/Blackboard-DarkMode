@@ -10,6 +10,8 @@
   const BTN_ID = 'ku-darkmode-btn';
   const CLASSIC_HOME_SHORTCUT_ITEM_ID = 'ku-course-menu-home-shortcut-item';
   const CLASSIC_HOME_SHORTCUT_LINK_ID = 'ku-course-menu-home-shortcut';
+  const MESSAGE_TOOLTIP_ATTR = 'data-ku-tooltip';
+  const MESSAGE_TOOLTIP_TITLE_ATTR = 'data-ku-original-title';
 
   const ICON_MOON = `<svg class="ku-dm-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" fill="currentColor"/></svg>`;
   const ICON_SUN = `<svg class="ku-dm-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill="currentColor"/></svg>`;
@@ -51,6 +53,7 @@
     isDarkMode = enabled;
     document.documentElement.classList.toggle('ku-dark-mode', enabled);
     syncClassicCourseMenuHomeShortcutVisibility();
+    syncMessageEditorTooltips();
     updateButton();
   }
 
@@ -145,6 +148,75 @@
     setTimeout(() => observer.disconnect(), 30000);
   }
 
+  function stripMessageToolbarTitles(button) {
+    if (!button) return;
+
+    const originalTitle = button.getAttribute(MESSAGE_TOOLTIP_TITLE_ATTR) || button.getAttribute('title') || button.getAttribute('aria-label') || '';
+    if (originalTitle) {
+      button.setAttribute(MESSAGE_TOOLTIP_ATTR, originalTitle);
+      button.setAttribute(MESSAGE_TOOLTIP_TITLE_ATTR, originalTitle);
+    }
+
+    const titledNodes = [button, ...button.querySelectorAll('[title]')];
+    titledNodes.forEach((node) => {
+      const nodeTitle = node.getAttribute('title');
+      if (nodeTitle) {
+        node.setAttribute(MESSAGE_TOOLTIP_TITLE_ATTR, nodeTitle);
+        node.removeAttribute('title');
+      }
+    });
+  }
+
+  function restoreMessageToolbarTitles(button) {
+    if (!button) return;
+
+    button.removeAttribute(MESSAGE_TOOLTIP_ATTR);
+    if (button.hasAttribute(MESSAGE_TOOLTIP_TITLE_ATTR)) {
+      button.setAttribute('title', button.getAttribute(MESSAGE_TOOLTIP_TITLE_ATTR) || '');
+    }
+
+    const titledNodes = [button, ...button.querySelectorAll(`[${MESSAGE_TOOLTIP_TITLE_ATTR}]`)];
+    titledNodes.forEach((node) => {
+      if (node === button) return;
+      const originalTitle = node.getAttribute(MESSAGE_TOOLTIP_TITLE_ATTR);
+      if (originalTitle) {
+        node.setAttribute('title', originalTitle);
+      }
+    });
+  }
+
+  function syncMessageEditorTooltips() {
+    const buttons = document.querySelectorAll('.message-panel .bb-editor-toolbar-button');
+    buttons.forEach((button) => {
+      if (isDarkMode) {
+        stripMessageToolbarTitles(button);
+      } else {
+        restoreMessageToolbarTitles(button);
+      }
+    });
+  }
+
+  function initMessageEditorTooltips() {
+    syncMessageEditorTooltips();
+
+    document.addEventListener('mouseover', (event) => {
+      if (!isDarkMode) return;
+      stripMessageToolbarTitles(event.target.closest('.message-panel .bb-editor-toolbar-button'));
+    }, true);
+
+    document.addEventListener('focusin', (event) => {
+      if (!isDarkMode) return;
+      stripMessageToolbarTitles(event.target.closest('.message-panel .bb-editor-toolbar-button'));
+    }, true);
+
+    const observer = new MutationObserver(() => {
+      syncMessageEditorTooltips();
+    });
+
+    observer.observe(document.body, { childList: true, subtree: true });
+    setTimeout(() => observer.disconnect(), 30000);
+  }
+
   function createButton() {
     const btn = document.createElement('button');
     btn.id = BTN_ID;
@@ -183,6 +255,7 @@
     applyDarkMode(loadPreference());
     window.addEventListener('storage', handleStorageSync);
     initClassicCourseMenuHomeShortcut();
+    initMessageEditorTooltips();
 
     if (!isTopWindow()) return;
 

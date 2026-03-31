@@ -822,10 +822,37 @@ html.ku-dark-mode ul#content_listContainer > li.liItem .item > div {
   color: var(--ku-text-soft) !important;
 }
 
+html.ku-dark-mode ul#content_listContainer > li.liItem .vtbegenerated,
+html.ku-dark-mode ul#content_listContainer > li.liItem .vtbegenerated div,
+html.ku-dark-mode ul#content_listContainer > li.liItem .vtbegenerated p,
+html.ku-dark-mode ul#content_listContainer > li.liItem .vtbegenerated span,
+html.ku-dark-mode ul#content_listContainer > li.liItem .vtbegenerated ol,
+html.ku-dark-mode ul#content_listContainer > li.liItem .vtbegenerated ul,
+html.ku-dark-mode ul#content_listContainer > li.liItem .vtbegenerated li,
+html.ku-dark-mode ul#content_listContainer > li.liItem .vtbegenerated strong,
+html.ku-dark-mode ul#content_listContainer > li.liItem .vtbegenerated em,
+html.ku-dark-mode ul#content_listContainer > li.liItem .vtbegenerated b,
+html.ku-dark-mode ul#content_listContainer > li.liItem .vtbegenerated i,
+html.ku-dark-mode ul#content_listContainer > li.liItem .vtbegenerated font {
+  background-color: transparent !important;
+  background-image: none !important;
+  color: var(--ku-text-soft) !important;
+}
+
+html.ku-dark-mode ul#content_listContainer > li.liItem .vtbegenerated strong,
+html.ku-dark-mode ul#content_listContainer > li.liItem .vtbegenerated b {
+  color: var(--ku-text) !important;
+}
+
 html.ku-dark-mode ul#content_listContainer > li.liItem a,
 html.ku-dark-mode ul#content_listContainer > li.liItem a span,
 html.ku-dark-mode ul#content_listContainer > li.liItem h3 a,
 html.ku-dark-mode ul#content_listContainer > li.liItem h3 span[style] {
+  color: var(--ku-link) !important;
+}
+
+html.ku-dark-mode ul#content_listContainer > li.liItem .vtbegenerated a,
+html.ku-dark-mode ul#content_listContainer > li.liItem .vtbegenerated a * {
   color: var(--ku-link) !important;
 }
 
@@ -1140,6 +1167,167 @@ html.ku-dark-mode .sortable_item_row.row.expanded:hover .cell {
   color: var(--ku-text) !important;
 }
 
+html.ku-dark-mode .sortable_item_row.calculatedRow,
+html.ku-dark-mode .sortable_item_row.calculatedRow.row.expanded {
+  background-color: rgba(147, 184, 255, 0.08) !important;
+  border: 1px solid rgba(147, 184, 255, 0.26) !important;
+  border-radius: 4px !important;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.03),
+    0 0 22px rgba(147, 184, 255, 0.08) !important;
+}
+
+html.ku-dark-mode .sortable_item_row.calculatedRow .cell,
+html.ku-dark-mode .sortable_item_row.calculatedRow.row.expanded .cell {
+  background-color: transparent !important;
+  border-color: rgba(147, 184, 255, 0.18) !important;
+}
+
+html.ku-dark-mode .sortable_item_row.calculatedRow:hover,
+html.ku-dark-mode .sortable_item_row.calculatedRow:hover .cell,
+html.ku-dark-mode .sortable_item_row.calculatedRow.row.expanded:hover,
+html.ku-dark-mode .sortable_item_row.calculatedRow.row.expanded:hover .cell,
+html.ku-dark-mode .sortable_item_row.calculatedRow:focus-within,
+html.ku-dark-mode .sortable_item_row.calculatedRow:focus-within .cell,
+html.ku-dark-mode .sortable_item_row.calculatedRow.row.expanded:focus-within,
+html.ku-dark-mode .sortable_item_row.calculatedRow.row.expanded:focus-within .cell {
+  background-color: rgba(147, 184, 255, 0.08) !important;
+  color: var(--ku-text) !important;
+}
+
+html.ku-dark-mode .sortable_item_row.calculatedRow:hover,
+html.ku-dark-mode .sortable_item_row.calculatedRow.row.expanded:hover,
+html.ku-dark-mode .sortable_item_row.calculatedRow:focus-within,
+html.ku-dark-mode .sortable_item_row.calculatedRow.row.expanded:focus-within {
+  border-color: rgba(147, 184, 255, 0.32) !important;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.04),
+    0 0 22px rgba(147, 184, 255, 0.08) !important;
+}
+
+html.ku-dark-mode .row.tabular-row.js-row.element-list-row,
+html.ku-dark-mode .row.tabular-row.js-row.element-list-row > .columns,
+html.ku-dark-mode .row.tabular-row.js-row.element-list-row > .columns > div,
+html.ku-dark-mode .row.tabular-row.js-row.element-list-row .element-card,
+html.ku-dark-mode .row.tabular-row.js-row.element-list-row .element-details,
+html.ku-dark-mode .row.tabular-row.js-row.element-list-row .grade-status {
+  background-color: transparent !important;
+  background-image: none !important;
+  border-color: var(--ku-border) !important;
+  color: var(--ku-text-soft) !important;
+}
+
+html.ku-dark-mode .row.tabular-row.js-row.element-list-row:hover,
+html.ku-dark-mode .row.tabular-row.js-row.element-list-row:hover > .columns,
+html.ku-dark-mode .row.tabular-row.js-row.element-list-row:hover > .columns > div,
+html.ku-dark-mode .row.tabular-row.js-row.element-list-row:hover .element-card,
+html.ku-dark-mode .row.tabular-row.js-row.element-list-row:hover .element-details,
+html.ku-dark-mode .row.tabular-row.js-row.element-list-row:hover .grade-status,
+html.ku-dark-mode .row.tabular-row.js-row.element-list-row:focus-within,
+html.ku-dark-mode .row.tabular-row.js-row.element-list-row:focus-within > .columns,
+html.ku-dark-mode .row.tabular-row.js-row.element-list-row:focus-within > .columns > div,
+html.ku-dark-mode .row.tabular-row.js-row.element-list-row:focus-within .element-card,
+html.ku-dark-mode .row.tabular-row.js-row.element-list-row:focus-within .element-details,
+html.ku-dark-mode .row.tabular-row.js-row.element-list-row:focus-within .grade-status {
+  background-color: var(--ku-surface-2) !important;
+  background-image: none !important;
+  color: var(--ku-text) !important;
+}
+
+html.ku-dark-mode bb-display-grade-pill .wrapping-input-style.pill-style,
+html.ku-dark-mode bb-display-grade-pill .readonly.pill-style,
+html.ku-dark-mode bb-display-grade-pill .customGradePill {
+  border: 1px solid rgba(10, 19, 34, 0.7) !important;
+  box-shadow: 0 0 0 1px rgba(10, 19, 34, 0.16) !important;
+}
+
+html.ku-dark-mode bb-display-grade-pill .wrapping-input-style.pill-style,
+html.ku-dark-mode bb-display-grade-pill .wrapping-input-style.pill-style .grade-input-display,
+html.ku-dark-mode bb-display-grade-pill .wrapping-input-style.pill-style .grade-input-display bdi,
+html.ku-dark-mode bb-display-grade-pill .wrapping-input-style.pill-style .grade-ellipsis,
+html.ku-dark-mode bb-display-grade-pill .wrapping-input-style.pill-style .grade-ellipsis bdi,
+html.ku-dark-mode bb-display-grade-pill .customGradePill,
+html.ku-dark-mode bb-display-grade-pill .customGradePill .grade-input-display,
+html.ku-dark-mode bb-display-grade-pill .customGradePill .grade-input-display bdi,
+html.ku-dark-mode bb-display-grade-pill .customGradePill .grade-ellipsis,
+html.ku-dark-mode bb-display-grade-pill .customGradePill .grade-ellipsis bdi {
+  color: #12213a !important;
+}
+
+html.ku-dark-mode .lb-wrapper,
+html.ku-dark-mode .lb-wrapper[role='dialog'],
+html.ku-dark-mode .lb-wrapper .lb-content,
+html.ku-dark-mode .lb-wrapper .container,
+html.ku-dark-mode .lb-wrapper .vtbegenerated {
+  background: var(--ku-surface) !important;
+  background-color: var(--ku-surface) !important;
+  background-image: none !important;
+  border-color: var(--ku-border-strong) !important;
+  color: var(--ku-text-soft) !important;
+  box-shadow: 0 18px 40px var(--ku-shadow) !important;
+}
+
+html.ku-dark-mode .lb-wrapper .lb-header,
+html.ku-dark-mode .lb-wrapper .lb-header h2,
+html.ku-dark-mode .lb-wrapper #dialogheading {
+  background: var(--ku-surface) !important;
+  background-color: var(--ku-surface) !important;
+  background-image: none !important;
+  border-color: var(--ku-border) !important;
+  color: var(--ku-text) !important;
+}
+
+html.ku-dark-mode .lb-wrapper .lb-content *,
+html.ku-dark-mode .lb-wrapper .container *,
+html.ku-dark-mode .lb-wrapper .vtbegenerated * {
+  color: var(--ku-text-soft) !important;
+}
+
+html.ku-dark-mode .lb-wrapper .vtbegenerated,
+html.ku-dark-mode .lb-wrapper .vtbegenerated div,
+html.ku-dark-mode .lb-wrapper .vtbegenerated p,
+html.ku-dark-mode .lb-wrapper .vtbegenerated span,
+html.ku-dark-mode .lb-wrapper .vtbegenerated ol,
+html.ku-dark-mode .lb-wrapper .vtbegenerated ul,
+html.ku-dark-mode .lb-wrapper .vtbegenerated li,
+html.ku-dark-mode .lb-wrapper .vtbegenerated strong,
+html.ku-dark-mode .lb-wrapper .vtbegenerated em,
+html.ku-dark-mode .lb-wrapper .vtbegenerated b,
+html.ku-dark-mode .lb-wrapper .vtbegenerated i,
+html.ku-dark-mode .lb-wrapper .vtbegenerated font {
+  background-color: transparent !important;
+  background-image: none !important;
+  color: var(--ku-text-soft) !important;
+}
+
+html.ku-dark-mode .lb-wrapper .vtbegenerated strong,
+html.ku-dark-mode .lb-wrapper .vtbegenerated b {
+  color: var(--ku-text) !important;
+}
+
+html.ku-dark-mode .lb-wrapper .vtbegenerated a,
+html.ku-dark-mode .lb-wrapper .vtbegenerated a * {
+  color: var(--ku-link) !important;
+}
+
+html.ku-dark-mode .lb-wrapper .lbAction {
+  background: var(--ku-surface-2) !important;
+  background-color: var(--ku-surface-2) !important;
+  border: 1px solid var(--ku-border) !important;
+  border-radius: 999px !important;
+  box-shadow: none !important;
+}
+
+html.ku-dark-mode .lb-wrapper .lbAction:hover,
+html.ku-dark-mode .lb-wrapper .lbAction:focus-visible {
+  background-color: var(--ku-surface-3) !important;
+  border-color: var(--ku-border-strong) !important;
+}
+
+html.ku-dark-mode .lb-wrapper .lbAction img {
+  filter: brightness(0) invert(1) opacity(0.92) !important;
+}
+
 html.ku-dark-mode #containerdiv,
 html.ku-dark-mode .container.clearfix#containerdiv,
 html.ku-dark-mode .gradeTableNew,
@@ -1166,6 +1354,189 @@ html.ku-dark-mode .grades_header .cell {
 
 html.ku-dark-mode .grades_header .cell[role='columnheader'] {
   color: var(--ku-text-soft) !important;
+}
+
+html.ku-dark-mode .base-grades-empty-element,
+html.ku-dark-mode .base-grades-empty-state,
+html.ku-dark-mode .base-grades-empty-state.text-center,
+html.ku-dark-mode .base-grades-empty-state .main,
+html.ku-dark-mode .no-grades.base-grades-empty-state,
+html.ku-dark-mode .row .base-grades-empty-element .base-grades-empty-state {
+  background: var(--ku-surface) !important;
+  background-color: var(--ku-surface) !important;
+  background-image: none !important;
+  border-color: var(--ku-border) !important;
+  color: var(--ku-text-soft) !important;
+  box-shadow: none !important;
+}
+
+html.ku-dark-mode .base-grades-empty-state .main,
+html.ku-dark-mode .no-grades.base-grades-empty-state .main {
+  color: var(--ku-text-soft) !important;
+}
+
+html.ku-dark-mode [data-base-state-name='base.grades.peek'],
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .bb-offcanvas-panel-wrap,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .side-panel-content,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .panel-wrap.telemetry-panel,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .telemetry-panel-content.panel-content,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .telemetry-details,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] section.full,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .telemetry-chart,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .telemetry-graph,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .telemetry-chart-container,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .chart-and-zoom-container,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .chart,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .table.telemetry-chart-table,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .activity-time-series-table,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .telemetry-table-legend,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .view-toolbar,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .telemetry-toolbar,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .chart-zoom-buttons-container,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .zoom-buttons-container {
+  background: var(--ku-surface) !important;
+  background-color: var(--ku-surface) !important;
+  background-image: none !important;
+  border-color: var(--ku-border) !important;
+  color: var(--ku-text-soft) !important;
+  box-shadow: none !important;
+}
+
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .panel-header.simple-header,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .panel-titles-container,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .black-header-contents,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .panel-sub-title,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .panel-title {
+  background: var(--ku-bg-elevated) !important;
+  background-color: var(--ku-bg-elevated) !important;
+  background-image: none !important;
+  color: var(--ku-text) !important;
+  border-color: var(--ku-border) !important;
+}
+
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .telemetry-panel-content p,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .telemetry-panel-content span,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .telemetry-panel-content h1,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .telemetry-panel-content h2,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .telemetry-panel-content h3,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .telemetry-panel-content th,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .telemetry-panel-content td {
+  color: var(--ku-text-soft) !important;
+}
+
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .peek-chart-title,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .learn-more-link,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .telemetry-download-btn-link,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .ci-label {
+  color: var(--ku-link) !important;
+}
+
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .telemetry-table-legend-container,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .legend-entry {
+  background: var(--ku-surface-2) !important;
+  background-color: var(--ku-surface-2) !important;
+  background-image: none !important;
+  border-color: var(--ku-border) !important;
+  color: var(--ku-text-soft) !important;
+  box-shadow: none !important;
+}
+
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .ci-icon {
+  background-image: none !important;
+  border: 1px solid transparent !important;
+  box-shadow: none !important;
+}
+
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .ci-icon.above-ci-icon {
+  background-color: #7fb7ff !important;
+  border-color: #a8cfff !important;
+}
+
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .ci-icon.below-ci-icon {
+  background-color: #d88fb1 !important;
+  border-color: #e8b8cf !important;
+}
+
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .legend-entry .ci-label {
+  color: var(--ku-text-soft) !important;
+}
+
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .learn-more-link:hover,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .telemetry-download-btn-link:hover,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .learn-more-link:focus-visible,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .telemetry-download-btn-link:focus-visible {
+  color: var(--ku-link-hover) !important;
+}
+
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .makeStylesroot-0-2-508,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .makeStylesoption-0-2-509,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .button-group.zoom-button-group,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .button.toggle-button,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .telemetry-button,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .telemetry-download-btn.telemetry-btn-lg,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .telemetryTinyDrop {
+  background: var(--ku-surface-2) !important;
+  background-color: var(--ku-surface-2) !important;
+  background-image: none !important;
+  border-color: var(--ku-border) !important;
+  color: var(--ku-text-soft) !important;
+  box-shadow: none !important;
+}
+
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .makeStylesoption-0-2-509:hover,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .makeStylesoption-0-2-509:focus-within,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .button.toggle-button:hover,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .button.toggle-button:focus-visible,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .telemetry-button:hover,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .telemetry-button:focus-visible,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .telemetryTinyDrop a:hover,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .telemetryTinyDrop a:focus-visible {
+  background-color: var(--ku-surface-3) !important;
+  border-color: var(--ku-border-strong) !important;
+  color: var(--ku-text) !important;
+}
+
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .fs-table,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .fs-table thead,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .fs-table tbody,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .fs-table tr,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .fs-table th,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .fs-table td {
+  background: var(--ku-surface) !important;
+  background-color: var(--ku-surface) !important;
+  border-color: var(--ku-border) !important;
+  color: var(--ku-text-soft) !important;
+}
+
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .highcharts-container,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .highcharts-root,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .highcharts-tooltip,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .highcharts-legend {
+  background: var(--ku-surface) !important;
+  background-color: var(--ku-surface) !important;
+  box-shadow: none !important;
+}
+
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .highcharts-background,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .highcharts-legend rect,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .highcharts-tooltip path {
+  fill: var(--ku-surface) !important;
+  stroke: var(--ku-border) !important;
+}
+
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .highcharts-grid path,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .highcharts-axis path,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .highcharts-axis line {
+  stroke: var(--ku-border) !important;
+}
+
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .highcharts-title,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .highcharts-axis-labels text,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .highcharts-yaxis-title,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .highcharts-legend-item span,
+html.ku-dark-mode [data-base-state-name='base.grades.peek'] .highcharts-tooltip span {
+  color: var(--ku-text-soft) !important;
+  fill: var(--ku-text-soft) !important;
 }
 
 html.ku-dark-mode .base-messages,
@@ -1248,4 +1619,268 @@ html.ku-dark-mode .messages-container-summary .messages-icon svg,
 html.ku-dark-mode .messages-container-summary .messages-icon path {
   color: var(--ku-text-soft) !important;
   fill: currentColor !important;
+}
+
+html.ku-dark-mode .message-panel.panel-wrap,
+html.ku-dark-mode .message-panel .panel-content,
+html.ku-dark-mode .message-panel .peek-panel-message-header,
+html.ku-dark-mode .message-panel .message-reply-container,
+html.ku-dark-mode .message-panel .message-reply-panel,
+html.ku-dark-mode .message-panel .message-controls-wrapper,
+html.ku-dark-mode .message-panel .checkboxes-container,
+html.ku-dark-mode .message-panel .send-wrapper,
+html.ku-dark-mode .message-panel .empty-conversation,
+html.ku-dark-mode .message-panel .makeStylescontainer-0-2-297,
+html.ku-dark-mode .message-panel .makeStylescomponentContainer-0-2-296 {
+  background: var(--ku-surface) !important;
+  background-color: var(--ku-surface) !important;
+  background-image: none !important;
+  border-color: var(--ku-border) !important;
+  box-shadow: none !important;
+  color: var(--ku-text-soft) !important;
+}
+
+html.ku-dark-mode .message-panel .panel-header.simple-header,
+html.ku-dark-mode .message-panel .panel-titles-container,
+html.ku-dark-mode .message-panel .black-header-contents.message-navigation {
+  background: var(--ku-bg-elevated) !important;
+  background-color: var(--ku-bg-elevated) !important;
+  background-image: none !important;
+  border-color: var(--ku-border) !important;
+  color: var(--ku-text) !important;
+}
+
+html.ku-dark-mode .message-panel .message-title,
+html.ku-dark-mode .message-panel .panel-title,
+html.ku-dark-mode .message-panel .panel-sub-title,
+html.ku-dark-mode .message-panel .black-header-contents.message-navigation,
+html.ku-dark-mode .message-panel .black-header-contents.message-navigation * {
+  color: var(--ku-text) !important;
+}
+
+html.ku-dark-mode .message-panel .panel-title,
+html.ku-dark-mode .message-panel h1.panel-title {
+  color: #ffffff !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+html.ku-dark-mode .message-panel .black-header-contents.message-navigation h1.panel-title,
+html.ku-dark-mode .message-panel .panel-header.simple-header h1.panel-title,
+html.ku-dark-mode .message-panel h1.panel-title[bb-translate] {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  text-shadow: none !important;
+}
+
+html.ku-dark-mode .message-panel .menu-toggle.standard-button.dark-background {
+  background: var(--ku-surface-2) !important;
+  background-color: var(--ku-surface-2) !important;
+  background-image: none !important;
+  border-color: var(--ku-border) !important;
+  box-shadow: none !important;
+  color: var(--ku-text-soft) !important;
+}
+
+html.ku-dark-mode .message-panel .menu-toggle.standard-button.dark-background:hover,
+html.ku-dark-mode .message-panel .menu-toggle.standard-button.dark-background:focus-visible {
+  background-color: var(--ku-surface-3) !important;
+  border-color: var(--ku-border-strong) !important;
+  color: var(--ku-text) !important;
+}
+
+html.ku-dark-mode .message-panel .menu-toggle.standard-button.dark-background svg,
+html.ku-dark-mode .message-panel .menu-toggle.standard-button.dark-background use {
+  color: var(--ku-text-soft) !important;
+  fill: currentColor !important;
+}
+
+html.ku-dark-mode .message-panel .js-participants-search,
+html.ku-dark-mode .message-panel .makeStylessearchBoxContainer-0-2-309,
+html.ku-dark-mode .message-panel .makeStylessearchBoxInput-0-2-310,
+html.ku-dark-mode .message-panel .makeStylesrecipientsSearchBox-0-2-311,
+html.ku-dark-mode .message-panel .makeStylesrecipientValidation-0-2-312 {
+  background-color: transparent !important;
+  border-color: var(--ku-border) !important;
+  color: var(--ku-text-soft) !important;
+}
+
+html.ku-dark-mode .message-panel .makeStylessearchBoxLabel-0-2-308,
+html.ku-dark-mode .message-panel label[for="participant-search-input"],
+html.ku-dark-mode .message-panel .MuiFormLabelroot-0-2-336,
+html.ku-dark-mode .message-panel .MuiInputLabelroot-0-2-324,
+html.ku-dark-mode .message-panel .PrivateNotchedOutlinelegendLabelled-0-2-386 span {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  color: var(--ku-text-muted) !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+html.ku-dark-mode .message-panel .MuiInputBaseroot-0-2-359,
+html.ku-dark-mode .message-panel .MuiOutlinedInputroot-0-2-344,
+html.ku-dark-mode .message-panel .PrivateNotchedOutlineroot-0-2-384,
+html.ku-dark-mode .message-panel .MuiOutlinedInputnotchedOutline-0-2-353 {
+  background: var(--ku-surface-2) !important;
+  background-color: var(--ku-surface-2) !important;
+  background-image: none !important;
+  border-color: var(--ku-border) !important;
+  box-shadow: none !important;
+}
+
+html.ku-dark-mode .message-panel #participant-search-input,
+html.ku-dark-mode .message-panel .MuiInputBaseinput-0-2-370,
+html.ku-dark-mode .message-panel .MuiOutlinedInputinput-0-2-354 {
+  background: transparent !important;
+  background-color: transparent !important;
+  color: var(--ku-text) !important;
+}
+
+html.ku-dark-mode .message-panel .MuiInputAdornmentroot-0-2-377,
+html.ku-dark-mode .message-panel .MuiInputAdornmentroot-0-2-377 svg,
+html.ku-dark-mode .message-panel .MuiInputAdornmentroot-0-2-377 path {
+  color: var(--ku-text-muted) !important;
+  fill: currentColor !important;
+}
+
+html.ku-dark-mode .message-panel .bb-editor-root,
+html.ku-dark-mode .message-panel .bb-editor-toolbar,
+html.ku-dark-mode .message-panel .editor-content-container,
+html.ku-dark-mode .message-panel .bb-editor-container,
+html.ku-dark-mode .message-panel .ql-container,
+html.ku-dark-mode .message-panel .message-reply,
+html.ku-dark-mode .message-panel .ql-editor.bb-editor {
+  background: var(--ku-surface) !important;
+  background-color: var(--ku-surface) !important;
+  background-image: none !important;
+  border-color: var(--ku-border) !important;
+  box-shadow: none !important;
+  color: var(--ku-text-soft) !important;
+}
+
+html.ku-dark-mode .message-panel .bb-editor-toolbar {
+  background-color: var(--ku-surface-2) !important;
+}
+
+html.ku-dark-mode .message-panel .bb-editor-toolbar-button,
+html.ku-dark-mode .message-panel .bb-editor-toolbar-button span,
+html.ku-dark-mode .message-panel .bb-editor-toolbar-button svg,
+html.ku-dark-mode .message-panel .bb-editor-toolbar-button path {
+  background: transparent !important;
+  background-color: transparent !important;
+  color: var(--ku-text-soft) !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+  box-shadow: none !important;
+}
+
+html.ku-dark-mode .message-panel .bb-editor-toolbar-button:hover,
+html.ku-dark-mode .message-panel .bb-editor-toolbar-button:focus-visible,
+html.ku-dark-mode .message-panel .bb-editor-toolbar-button[aria-pressed='true'] {
+  background: var(--ku-surface-3) !important;
+  background-color: var(--ku-surface-3) !important;
+  color: var(--ku-text) !important;
+  border-color: var(--ku-border-strong) !important;
+  box-shadow: none !important;
+}
+
+html.ku-dark-mode .message-panel .bb-editor-toolbar-button:hover *,
+html.ku-dark-mode .message-panel .bb-editor-toolbar-button:focus-visible *,
+html.ku-dark-mode .message-panel .bb-editor-toolbar-button[aria-pressed='true'] * {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  color: var(--ku-text) !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+  box-shadow: none !important;
+}
+
+html.ku-dark-mode .message-panel .bb-editor-toolbar-button {
+  position: relative !important;
+  overflow: visible !important;
+}
+
+html.ku-dark-mode .message-panel .bb-editor-toolbar-button::after {
+  content: none;
+}
+
+html.ku-dark-mode .message-panel .bb-editor-toolbar-button[data-ku-tooltip]:hover::after,
+html.ku-dark-mode .message-panel .bb-editor-toolbar-button[data-ku-tooltip]:focus-visible::after {
+  content: attr(data-ku-tooltip);
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 8px);
+  transform: translateX(-50%);
+  padding: 6px 10px;
+  border: 1px solid var(--ku-border-strong);
+  border-radius: 8px;
+  background: var(--ku-bg-elevated);
+  background-color: var(--ku-bg-elevated);
+  color: #ffffff !important;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap;
+  box-shadow: 0 8px 22px rgba(3, 10, 23, 0.32);
+  pointer-events: none;
+  z-index: 1000;
+}
+
+html.ku-dark-mode .message-panel .ql-editor.bb-editor,
+html.ku-dark-mode .message-panel .ql-editor.bb-editor p,
+html.ku-dark-mode .message-panel .ql-editor.bb-editor span {
+  color: var(--ku-text) !important;
+}
+
+html.ku-dark-mode .message-panel .ql-editor.bb-editor.ql-blank::before {
+  color: var(--ku-text-muted) !important;
+}
+
+html.ku-dark-mode .message-panel .MuiButtonroot-0-2-400,
+html.ku-dark-mode .message-panel .MuiButtoncontained-0-2-408,
+html.ku-dark-mode .message-panel .MuiButtoncontainedPrimary-0-2-409 {
+  background: var(--ku-sidebar-2) !important;
+  background-color: var(--ku-sidebar-2) !important;
+  background-image: none !important;
+  border-color: var(--ku-border) !important;
+  box-shadow: none !important;
+  color: var(--ku-text) !important;
+}
+
+html.ku-dark-mode .message-panel .MuiButtonroot-0-2-400:hover,
+html.ku-dark-mode .message-panel .MuiButtonroot-0-2-400:focus-visible {
+  background-color: var(--ku-surface-3) !important;
+  border-color: var(--ku-border-strong) !important;
+}
+
+html.ku-dark-mode .message-panel .MuiButtondisabled-0-2-413,
+html.ku-dark-mode .message-panel .MuiButtonBasedisabled-0-2-255,
+html.ku-dark-mode .message-panel button[disabled] {
+  background: var(--ku-surface-2) !important;
+  background-color: var(--ku-surface-2) !important;
+  border-color: var(--ku-border) !important;
+  color: var(--ku-text-muted) !important;
+  opacity: 0.8 !important;
+}
+
+html.ku-dark-mode .message-panel .MuiButtonlabel-0-2-401,
+html.ku-dark-mode .message-panel .MuiButtonlabel-0-2-401 span,
+html.ku-dark-mode .message-panel .MuiButtonstartIcon-0-2-424 svg,
+html.ku-dark-mode .message-panel .MuiButtonstartIcon-0-2-424 path {
+  color: inherit !important;
+  fill: currentColor !important;
+}
+
+html.ku-dark-mode .message-panel .empty-conversation h2,
+html.ku-dark-mode .message-panel .empty-conversation .MuiTypographyh2-0-2-51,
+html.ku-dark-mode .message-panel .empty-conversation .makeStylessubText-0-2-304 {
+  color: var(--ku-text-soft) !important;
 }
