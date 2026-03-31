@@ -1,0 +1,420 @@
+/* KU Elearn Dark Mode: color-only KU blue theme */
+
+#ku-darkmode-btn {
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 48px;
+  padding: 0.75rem 1rem;
+  gap: 0.75rem;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.84);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  -webkit-tap-highlight-color: transparent;
+}
+
+#ku-darkmode-btn:hover,
+#ku-darkmode-btn:focus-visible {
+  background-color: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+}
+
+#ku-darkmode-btn .ku-dm-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+#ku-darkmode-btn .ku-dm-label {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#ku-darkmode-btn .ku-dm-pill {
+  width: 32px;
+  height: 18px;
+  border-radius: 999px;
+  background-color: rgba(255, 255, 255, 0.18);
+  position: relative;
+  flex-shrink: 0;
+}
+
+#ku-darkmode-btn .ku-dm-pill::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.82);
+  transition: transform 0.18s ease;
+}
+
+html.ku-dark-mode {
+  --ku-bg: #111b2d;
+  --ku-bg-elevated: #16243a;
+  --ku-surface: #1d2d47;
+  --ku-surface-2: #243756;
+  --ku-surface-3: #294062;
+  --ku-sidebar: #12213a;
+  --ku-sidebar-2: #1b3765;
+  --ku-border: rgba(164, 185, 213, 0.2);
+  --ku-border-strong: rgba(176, 199, 230, 0.34);
+  --ku-text: #eef4fc;
+  --ku-text-soft: #d5e1f2;
+  --ku-text-muted: #a9bad3;
+  --ku-link: #cfe0ff;
+  --ku-link-hover: #ffffff;
+  --ku-focus: #93b8ff;
+  --ku-shadow: rgba(3, 10, 23, 0.28);
+}
+
+html.ku-dark-mode #ku-darkmode-btn {
+  color: var(--ku-text-soft);
+}
+
+html.ku-dark-mode #ku-darkmode-btn .ku-dm-pill {
+  background-color: #5d8fd6;
+}
+
+html.ku-dark-mode #ku-darkmode-btn .ku-dm-pill::after {
+  transform: translateX(14px);
+  background-color: #ffffff;
+}
+
+html.ku-dark-mode body,
+html.ku-dark-mode #main-content-inner,
+html.ku-dark-mode [ui-view],
+html.ku-dark-mode .route-view-container,
+html.ku-dark-mode .base-content,
+html.ku-dark-mode .base-container,
+html.ku-dark-mode .course-page,
+html.ku-dark-mode .institution-page-container,
+html.ku-dark-mode .ultra-page {
+  background-color: var(--ku-bg) !important;
+  color: var(--ku-text) !important;
+}
+
+html.ku-dark-mode .base-header,
+html.ku-dark-mode .black-panel-header,
+html.ku-dark-mode header,
+html.ku-dark-mode .page-header,
+html.ku-dark-mode .course-header {
+  background-color: var(--ku-bg-elevated) !important;
+  border-color: var(--ku-border) !important;
+  color: var(--ku-text) !important;
+}
+
+html.ku-dark-mode .base-side-menu,
+html.ku-dark-mode .base-navigation,
+html.ku-dark-mode .MuiDrawerpaper-0-2-83,
+html.ku-dark-mode [class*='MuiDrawerpaper'],
+html.ku-dark-mode [class*='makeStylesdrawer'],
+html.ku-dark-mode [class*='makeStylessidebar'],
+html.ku-dark-mode [class*='makeStylesfooter'],
+html.ku-dark-mode [class*='makeStylesmenu'] {
+  background-color: var(--ku-sidebar) !important;
+  color: var(--ku-text-soft) !important;
+  border-color: var(--ku-border) !important;
+}
+
+html.ku-dark-mode .base-navigation-button-content,
+html.ku-dark-mode .base-navigation-button-content:visited,
+html.ku-dark-mode .base-navigation-button-content * {
+  color: var(--ku-text-soft) !important;
+}
+
+html.ku-dark-mode .base-navigation-button-content:hover,
+html.ku-dark-mode .base-navigation-button-content:focus-visible {
+  background-color: rgba(147, 184, 255, 0.08) !important;
+}
+
+html.ku-dark-mode .base-navigation-button-content.active,
+html.ku-dark-mode .base-navigation-button-content[aria-current='page'],
+html.ku-dark-mode .base-navigation-button-content[class*='active'] {
+  background-color: var(--ku-sidebar-2) !important;
+  color: #ffffff !important;
+}
+
+html.ku-dark-mode .base-navigation-button-content.active *,
+html.ku-dark-mode .base-navigation-button-content[aria-current='page'] * {
+  color: #ffffff !important;
+}
+
+html.ku-dark-mode h1,
+html.ku-dark-mode h2,
+html.ku-dark-mode h3,
+html.ku-dark-mode h4,
+html.ku-dark-mode h5,
+html.ku-dark-mode h6,
+html.ku-dark-mode p,
+html.ku-dark-mode span,
+html.ku-dark-mode li,
+html.ku-dark-mode td,
+html.ku-dark-mode th,
+html.ku-dark-mode div {
+  color: inherit;
+}
+
+html.ku-dark-mode h1,
+html.ku-dark-mode h2,
+html.ku-dark-mode h3,
+html.ku-dark-mode h4,
+html.ku-dark-mode h5,
+html.ku-dark-mode h6 {
+  color: var(--ku-text) !important;
+}
+
+html.ku-dark-mode p,
+html.ku-dark-mode span,
+html.ku-dark-mode li,
+html.ku-dark-mode td,
+html.ku-dark-mode th,
+html.ku-dark-mode label,
+html.ku-dark-mode legend {
+  color: var(--ku-text-soft) !important;
+  text-shadow: none !important;
+}
+
+html.ku-dark-mode a,
+html.ku-dark-mode a span,
+html.ku-dark-mode a h4 {
+  color: var(--ku-link) !important;
+}
+
+html.ku-dark-mode a:hover,
+html.ku-dark-mode a:hover span,
+html.ku-dark-mode a:hover h4 {
+  color: var(--ku-link-hover) !important;
+}
+
+html.ku-dark-mode .MuiPaperroot-0-2-93,
+html.ku-dark-mode [class*='MuiPaperelevation'],
+html.ku-dark-mode .element-card,
+html.ku-dark-mode article.element-card,
+html.ku-dark-mode .course-element-card,
+html.ku-dark-mode .panel,
+html.ku-dark-mode .card,
+html.ku-dark-mode .contentPane,
+html.ku-dark-mode .institution-page-module,
+html.ku-dark-mode .learning-module,
+html.ku-dark-mode .bb-card,
+html.ku-dark-mode [class*='course-card'],
+html.ku-dark-mode [class*='pageSizeContainer'],
+html.ku-dark-mode [class*='mainContainer'],
+html.ku-dark-mode [class*='filtersContainer'],
+html.ku-dark-mode [class*='filtersDropdown'],
+html.ku-dark-mode [class*='toggleContainer'] {
+  background-color: var(--ku-surface) !important;
+  border-color: var(--ku-border) !important;
+  color: var(--ku-text) !important;
+}
+
+html.ku-dark-mode .element-card.course-element-card:hover,
+html.ku-dark-mode article.element-card.course-element-card:hover,
+html.ku-dark-mode [class*='course-card']:hover {
+  background-color: var(--ku-surface-2) !important;
+}
+
+html.ku-dark-mode .course-banner,
+html.ku-dark-mode .image-div,
+html.ku-dark-mode .term-header,
+html.ku-dark-mode [class*='termHeader'],
+html.ku-dark-mode [class*='sectionHeader'],
+html.ku-dark-mode [class*='termLabel'] {
+  background-color: var(--ku-surface-2) !important;
+  border-color: var(--ku-border) !important;
+  color: var(--ku-text) !important;
+}
+
+html.ku-dark-mode input,
+html.ku-dark-mode textarea,
+html.ku-dark-mode select,
+html.ku-dark-mode button,
+html.ku-dark-mode [role='button'][aria-haspopup='listbox'],
+html.ku-dark-mode [class*='MuiInputBaseroot'],
+html.ku-dark-mode [class*='MuiOutlinedInputroot'],
+html.ku-dark-mode [class*='MuiSelectroot'],
+html.ku-dark-mode [class*='MuiSelectselect'],
+html.ku-dark-mode [class*='MuiButtonroot'],
+html.ku-dark-mode [class*='MuiIconButtonroot'],
+html.ku-dark-mode .button-anchor,
+html.ku-dark-mode .more-info-toggle button,
+html.ku-dark-mode .info-icon,
+html.ku-dark-mode .favorite {
+  background-color: var(--ku-surface-2) !important;
+  border-color: var(--ku-border) !important;
+  color: var(--ku-text) !important;
+  box-shadow: none !important;
+}
+
+html.ku-dark-mode input:hover,
+html.ku-dark-mode textarea:hover,
+html.ku-dark-mode select:hover,
+html.ku-dark-mode button:hover,
+html.ku-dark-mode [role='button'][aria-haspopup='listbox']:hover,
+html.ku-dark-mode [class*='MuiInputBaseroot']:hover,
+html.ku-dark-mode [class*='MuiOutlinedInputroot']:hover,
+html.ku-dark-mode [class*='MuiSelectroot']:hover,
+html.ku-dark-mode [class*='MuiButtonroot']:hover,
+html.ku-dark-mode [class*='MuiIconButtonroot']:hover,
+html.ku-dark-mode .button-anchor:hover,
+html.ku-dark-mode .more-info-toggle button:hover {
+  background-color: var(--ku-surface-3) !important;
+  border-color: var(--ku-border-strong) !important;
+}
+
+html.ku-dark-mode input,
+html.ku-dark-mode textarea,
+html.ku-dark-mode select,
+html.ku-dark-mode .MuiInputBaseinput-0-2-333,
+html.ku-dark-mode .MuiOutlinedInputinput-0-2-317,
+html.ku-dark-mode .MuiSelectselect-0-2-353,
+html.ku-dark-mode .MuiSelectselectMenu-0-2-356,
+html.ku-dark-mode #courses-overview-filter-search,
+html.ku-dark-mode #courses-overview-filter-terms,
+html.ku-dark-mode #courses-overview-filter-filters {
+  color: var(--ku-text) !important;
+  background-color: transparent !important;
+}
+
+html.ku-dark-mode input::placeholder,
+html.ku-dark-mode textarea::placeholder {
+  color: var(--ku-text-muted) !important;
+  opacity: 1 !important;
+}
+
+html.ku-dark-mode label,
+html.ku-dark-mode legend,
+html.ku-dark-mode legend span,
+html.ku-dark-mode fieldset,
+html.ku-dark-mode fieldset legend,
+html.ku-dark-mode [id$='-label'],
+html.ku-dark-mode [class*='MuiFormLabelroot'],
+html.ku-dark-mode [class*='MuiInputLabelroot'],
+html.ku-dark-mode [class*='MuiInputLabeloutlined'],
+html.ku-dark-mode [class*='PrivateNotchedOutlinelegend'],
+html.ku-dark-mode [class*='PrivateNotchedOutlineroot'],
+html.ku-dark-mode [class*='MuiOutlinedInputnotchedOutline'] {
+  color: var(--ku-text-muted) !important;
+  border-color: var(--ku-border) !important;
+  background-color: var(--ku-bg) !important;
+  box-shadow: none !important;
+}
+
+html.ku-dark-mode .MuiInputAdornmentroot-0-2-340,
+html.ku-dark-mode .MuiInputAdornmentpositionStart-0-2-342,
+html.ku-dark-mode .MuiSelecticon-0-2-358,
+html.ku-dark-mode .MuiSelecticonOutlined-0-2-361,
+html.ku-dark-mode .svg-icon,
+html.ku-dark-mode bb-svg-icon svg,
+html.ku-dark-mode .MuiSvgIconroot-0-2-24,
+html.ku-dark-mode [class*='MuiSvgIconroot'],
+html.ku-dark-mode [class*='strokeIcon'],
+html.ku-dark-mode [class*='directionalIcon'] {
+  color: var(--ku-text-soft) !important;
+  background-color: transparent !important;
+  fill: currentColor !important;
+}
+
+html.ku-dark-mode [class*='MuiSvgIconroot'] path[fill],
+html.ku-dark-mode .svg-icon path[fill],
+html.ku-dark-mode bb-svg-icon svg path[fill] {
+  fill: currentColor !important;
+}
+
+html.ku-dark-mode [class*='MuiSvgIconroot'] path[stroke],
+html.ku-dark-mode .svg-icon path[stroke],
+html.ku-dark-mode bb-svg-icon svg path[stroke] {
+  stroke: currentColor !important;
+}
+
+html.ku-dark-mode [data-analytics-id='courses.overview.view.toggle'],
+html.ku-dark-mode [data-analytics-id='courses.overview.view.toggle'] label,
+html.ku-dark-mode [data-analytics-id='courses.overview.view.toggle'] svg,
+html.ku-dark-mode [data-analytics-id='courses.overview.view.toggle'] div {
+  background-color: transparent !important;
+  color: var(--ku-text-soft) !important;
+  border-color: var(--ku-border) !important;
+}
+
+html.ku-dark-mode [data-analytics-id='courses.overview.view.toggle'] {
+  background-color: var(--ku-surface) !important;
+}
+
+html.ku-dark-mode [data-analytics-id='courses.overview.view.toggle'] input[type='radio']:checked + svg,
+html.ku-dark-mode [data-analytics-id='courses.overview.view.toggle'] label:has(input[type='radio']:checked) {
+  color: #ffffff !important;
+  background-color: var(--ku-surface-2) !important;
+}
+
+html.ku-dark-mode .course-id,
+html.ku-dark-mode .course-type,
+html.ku-dark-mode .course-status,
+html.ku-dark-mode .multi-users-title,
+html.ku-dark-mode .view-users,
+html.ku-dark-mode .makeStylesinputLabel-0-2-370,
+html.ku-dark-mode .makeStyleslabel-0-2-280,
+html.ku-dark-mode .makeStyleshideOffScreen-0-2-278,
+html.ku-dark-mode .makeStyleshideOffScreen-0-2-651 {
+  color: var(--ku-text-muted) !important;
+  background-color: transparent !important;
+}
+
+html.ku-dark-mode table,
+html.ku-dark-mode thead,
+html.ku-dark-mode tbody,
+html.ku-dark-mode tr,
+html.ku-dark-mode th,
+html.ku-dark-mode td {
+  background-color: transparent !important;
+  border-color: var(--ku-border) !important;
+  color: var(--ku-text-soft) !important;
+}
+
+html.ku-dark-mode thead,
+html.ku-dark-mode th {
+  background-color: var(--ku-bg-elevated) !important;
+  color: var(--ku-text) !important;
+}
+
+html.ku-dark-mode .fc,
+html.ku-dark-mode [class*='fc-'],
+html.ku-dark-mode [class*='calendar'] {
+  background-color: var(--ku-surface) !important;
+  border-color: var(--ku-border) !important;
+  color: var(--ku-text) !important;
+}
+
+html.ku-dark-mode institution-page-home .module-wrapper__content:has(> .image-links-component__container),
+html.ku-dark-mode institution-page-home .module-wrapper__content:has(> .image-links-component__container) .module-wrapper__header,
+html.ku-dark-mode institution-page-home .module-wrapper__content:has(> .image-links-component__container) .module-wrapper__header-left,
+html.ku-dark-mode institution-page-home .image-links-component__container,
+html.ku-dark-mode institution-page-home .image-links-component__container .link-list-component,
+html.ku-dark-mode institution-page-home .image-links-component__container .link-list-component__column,
+html.ku-dark-mode institution-page-home .image-links-component__container .link-list-component__list,
+html.ku-dark-mode institution-page-home .image-links-component__container .link-list-component__list-item {
+  background-color: var(--ku-surface) !important;
+  border-color: var(--ku-border) !important;
+  color: var(--ku-text-soft) !important;
+}
+
+html.ku-dark-mode institution-page-home .image-links-component__container .link-list-component__link.-black,
+html.ku-dark-mode institution-page-home .image-links-component__container .link-list-component__link.-black:visited {
+  color: var(--ku-link) !important;
+}
+
+html.ku-dark-mode institution-page-home .image-links-component__container .link-list-component__link.-black:hover,
+html.ku-dark-mode institution-page-home .image-links-component__container .link-list-component__link.-black:focus-visible {
+  color: var(--ku-link-hover) !important;
+}
+
+html.ku-dark-mode *:focus-visible {
+  outline-color: var(--ku-focus) !important;
+}
