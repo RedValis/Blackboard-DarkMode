@@ -395,24 +395,94 @@ html.ku-dark-mode [class*='calendar'] {
 html.ku-dark-mode institution-page-home .module-wrapper__content:has(> .image-links-component__container),
 html.ku-dark-mode institution-page-home .module-wrapper__content:has(> .image-links-component__container) .module-wrapper__header,
 html.ku-dark-mode institution-page-home .module-wrapper__content:has(> .image-links-component__container) .module-wrapper__header-left,
+html.ku-dark-mode institution-page-home .module-wrapper__content:has(> .image-links-component__container) .module-wrapper__title,
+html.ku-dark-mode institution-page-home .module-wrapper__content:has(> .image-links-component__container) .subheader,
 html.ku-dark-mode institution-page-home .image-links-component__container,
 html.ku-dark-mode institution-page-home .image-links-component__container .link-list-component,
 html.ku-dark-mode institution-page-home .image-links-component__container .link-list-component__column,
 html.ku-dark-mode institution-page-home .image-links-component__container .link-list-component__list,
 html.ku-dark-mode institution-page-home .image-links-component__container .link-list-component__list-item {
+  background: var(--ku-surface) !important;
   background-color: var(--ku-surface) !important;
   border-color: var(--ku-border) !important;
   color: var(--ku-text-soft) !important;
 }
 
+html.ku-dark-mode institution-page-home .image-links-component__container .link-list-component__link,
 html.ku-dark-mode institution-page-home .image-links-component__container .link-list-component__link.-black,
 html.ku-dark-mode institution-page-home .image-links-component__container .link-list-component__link.-black:visited {
+  background: transparent !important;
+  background-color: transparent !important;
   color: var(--ku-link) !important;
+}
+
+html.ku-dark-mode institution-page-home .module-wrapper__content:has(> .image-links-component__container) .module-wrapper__title,
+html.ku-dark-mode institution-page-home .module-wrapper__content:has(> .image-links-component__container) .subheader {
+  color: var(--ku-text) !important;
+}
+
+html.ku-dark-mode institution-page-home .image-links-component__container .link-list-component__column *,
+html.ku-dark-mode institution-page-home .image-links-component__container .link-list-component__list *,
+html.ku-dark-mode institution-page-home .image-links-component__container .link-list-component__list-item * {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+html.ku-dark-mode institution-page-home .image-links-component__container .link-list-component__column,
+html.ku-dark-mode institution-page-home .image-links-component__container .link-list-component__list,
+html.ku-dark-mode institution-page-home .image-links-component__container .link-list-component__list-item {
+  background-image: none !important;
+}
+
+html.ku-dark-mode institution-page-home .image-links-component__container .link-list-component__list-item::before,
+html.ku-dark-mode institution-page-home .image-links-component__container .link-list-component__list-item::after {
+  background-color: var(--ku-border) !important;
 }
 
 html.ku-dark-mode institution-page-home .image-links-component__container .link-list-component__link.-black:hover,
 html.ku-dark-mode institution-page-home .image-links-component__container .link-list-component__link.-black:focus-visible {
   color: var(--ku-link-hover) !important;
+}
+
+html.ku-dark-mode institution-page-home .module-wrapper__content > .module-wrapper__header,
+html.ku-dark-mode institution-page-home .module-wrapper__content > .module-wrapper__header > .module-wrapper__header-left {
+  background: var(--ku-surface) !important;
+  background-color: var(--ku-surface) !important;
+  background-image: none !important;
+  border-color: var(--ku-border) !important;
+}
+
+html.ku-dark-mode institution-page-home .module-wrapper__content > .module-wrapper__header .module-wrapper__title,
+html.ku-dark-mode institution-page-home .module-wrapper__content > .module-wrapper__header .subheader {
+  background: transparent !important;
+  background-color: transparent !important;
+  color: var(--ku-text) !important;
+}
+
+html.ku-dark-mode .base-recent-activity .activity-stream .activity-group .stream-item:before {
+  background-color: rgba(29, 45, 71, 0.88) !important;
+}
+
+html.ku-dark-mode .base-recent-activity .activity-stream .activity-group .stream-item .element-image {
+  background-color: var(--ku-surface-2) !important;
+}
+
+html.ku-dark-mode .base-recent-activity .activity-stream .activity-group .stream-item:hover .element-image,
+html.ku-dark-mode .base-recent-activity .activity-stream .activity-group .stream-item:focus-within .element-image {
+  background-color: var(--ku-surface-3) !important;
+}
+
+html.ku-dark-mode .base-recent-activity .activity-stream .activity-group .stream-item-container.notification-box .stream-item:before {
+  background-color: rgba(29, 45, 71, 0.88) !important;
+  border-color: var(--ku-border) !important;
+}
+
+html.ku-dark-mode .base-recent-activity .activity-stream .activity-group .stream-item .timestamp,
+html.ku-dark-mode .base-recent-activity .activity-stream .activity-group .stream-item .timestamp .date,
+html.ku-dark-mode .base-recent-activity .activity-stream .activity-group .stream-item .timestamp .time,
+html.ku-dark-mode .base-recent-activity .activity-stream .activity-group .activity-group-title,
+html.ku-dark-mode .base-recent-activity .activity-stream .activity-group span.heading-date {
+  color: var(--ku-text-soft) !important;
 }
 
 html.ku-dark-mode *:focus-visible {
