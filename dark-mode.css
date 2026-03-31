@@ -1167,3 +1167,85 @@ html.ku-dark-mode .grades_header .cell {
 html.ku-dark-mode .grades_header .cell[role='columnheader'] {
   color: var(--ku-text-soft) !important;
 }
+
+html.ku-dark-mode .base-messages,
+html.ku-dark-mode .base-messages .course-list,
+html.ku-dark-mode .base-messages .messages-list,
+html.ku-dark-mode .base-messages [data-course-id] {
+  background-color: transparent !important;
+  border-color: var(--ku-border) !important;
+}
+
+html.ku-dark-mode .messages-container-summary,
+html.ku-dark-mode .messages-container-summary.color-override,
+html.ku-dark-mode .messages-container-summary.course-color-classic,
+html.ku-dark-mode .messages-container-summary[class*='course-color-'] {
+  background: var(--ku-surface) !important;
+  background-color: var(--ku-surface) !important;
+  background-image: none !important;
+  border-color: var(--ku-border) !important;
+  box-shadow: none !important;
+}
+
+html.ku-dark-mode .messages-container-summary .messages-header,
+html.ku-dark-mode .messages-container-summary .flex-summary,
+html.ku-dark-mode .messages-container-summary .information,
+html.ku-dark-mode .messages-container-summary .add-message-button {
+  background-color: transparent !important;
+  border-color: var(--ku-border) !important;
+  color: var(--ku-text-soft) !important;
+}
+
+html.ku-dark-mode .messages-container-summary .messages-header:hover,
+html.ku-dark-mode .messages-container-summary .messages-header:focus-within {
+  background-color: var(--ku-surface-2) !important;
+}
+
+html.ku-dark-mode .messages-container-summary .subtitle,
+html.ku-dark-mode .messages-container-summary .subtitle span,
+html.ku-dark-mode .messages-container-summary .subtitle bdi {
+  color: var(--ku-text-muted) !important;
+}
+
+html.ku-dark-mode .messages-container-summary .title,
+html.ku-dark-mode .messages-container-summary .title a,
+html.ku-dark-mode .messages-container-summary .title span,
+html.ku-dark-mode .messages-container-summary .summary,
+html.ku-dark-mode .messages-container-summary bb-unread-indicator,
+html.ku-dark-mode .messages-container-summary .makeStyleshideOffScreen-0-2-1100 {
+  color: var(--ku-text) !important;
+}
+
+html.ku-dark-mode .messages-container-summary .title a:hover,
+html.ku-dark-mode .messages-container-summary .title a:focus-visible {
+  color: var(--ku-link-hover) !important;
+}
+
+html.ku-dark-mode .messages-container-summary .js-create-message,
+html.ku-dark-mode .messages-container-summary .send-message-button-wrapper,
+html.ku-dark-mode .messages-container-summary .send-message-button-wrapper.messages-off {
+  background: var(--ku-surface-2) !important;
+  background-color: var(--ku-surface-2) !important;
+  background-image: none !important;
+  border-color: var(--ku-border) !important;
+  color: var(--ku-text-soft) !important;
+  box-shadow: none !important;
+}
+
+html.ku-dark-mode .messages-container-summary .js-create-message:hover .send-message-button-wrapper,
+html.ku-dark-mode .messages-container-summary .js-create-message:focus-visible .send-message-button-wrapper {
+  background-color: var(--ku-surface-3) !important;
+  border-color: var(--ku-border-strong) !important;
+  color: var(--ku-text) !important;
+}
+
+html.ku-dark-mode .messages-container-summary .messages-off {
+  color: var(--ku-text-muted) !important;
+}
+
+html.ku-dark-mode .messages-container-summary .messages-icon,
+html.ku-dark-mode .messages-container-summary .messages-icon svg,
+html.ku-dark-mode .messages-container-summary .messages-icon path {
+  color: var(--ku-text-soft) !important;
+  fill: currentColor !important;
+}
