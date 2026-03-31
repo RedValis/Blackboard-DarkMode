@@ -8,9 +8,12 @@
 
   const STORAGE_KEY = 'ku_dark_mode_enabled';
   const BTN_ID = 'ku-darkmode-btn';
+  const CLASSIC_HOME_SHORTCUT_ITEM_ID = 'ku-course-menu-home-shortcut-item';
+  const CLASSIC_HOME_SHORTCUT_LINK_ID = 'ku-course-menu-home-shortcut';
 
   const ICON_MOON = `<svg class="ku-dm-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" fill="currentColor"/></svg>`;
   const ICON_SUN = `<svg class="ku-dm-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill="currentColor"/></svg>`;
+  const ICON_HOME = `<svg class="ku-course-menu-home-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M2.5 6.4 8 2l5.5 4.4V13a1 1 0 0 1-1 1H9.5V9.5h-3V14h-3a1 1 0 0 1-1-1V6.4Z" fill="currentColor"/></svg>`;
 
   let isDarkMode = false;
 
@@ -47,6 +50,7 @@
   function applyDarkMode(enabled) {
     isDarkMode = enabled;
     document.documentElement.classList.toggle('ku-dark-mode', enabled);
+    syncClassicCourseMenuHomeShortcutVisibility();
     updateButton();
   }
 
@@ -58,6 +62,87 @@
   function handleStorageSync(event) {
     if (event.key !== STORAGE_KEY) return;
     applyDarkMode(event.newValue === 'true');
+  }
+
+  function getClassicCourseMenuNodes() {
+    return {
+      originalHome: document.querySelector('#courseMenuPalette #homeicon'),
+      actionList: document.querySelector('#courseMenuPalette .actionBarMicro ul.u_floatThis-right'),
+      refreshItem: document.getElementById('refreshMenuLink')
+    };
+  }
+
+  function syncClassicCourseMenuHomeShortcutVisibility() {
+    const originalHome = document.querySelector('#courseMenuPalette #homeicon[data-ku-homeicon-original="true"]');
+    const shortcutItem = document.getElementById(CLASSIC_HOME_SHORTCUT_ITEM_ID);
+
+    if (shortcutItem) {
+      shortcutItem.hidden = !isDarkMode;
+    }
+
+    if (originalHome) {
+      if (isDarkMode) {
+        originalHome.setAttribute('aria-hidden', 'true');
+        originalHome.setAttribute('tabindex', '-1');
+      } else {
+        originalHome.removeAttribute('aria-hidden');
+        originalHome.removeAttribute('tabindex');
+      }
+    }
+  }
+
+  function ensureClassicCourseMenuHomeShortcut() {
+    const { originalHome, actionList, refreshItem } = getClassicCourseMenuNodes();
+    if (!originalHome || !actionList) return false;
+
+    originalHome.setAttribute('data-ku-homeicon-original', 'true');
+
+    let shortcutItem = document.getElementById(CLASSIC_HOME_SHORTCUT_ITEM_ID);
+    if (!shortcutItem) {
+      shortcutItem = document.createElement('li');
+      shortcutItem.id = CLASSIC_HOME_SHORTCUT_ITEM_ID;
+      shortcutItem.className = 'secondaryButton ku-course-menu-home-shortcut-item';
+
+      const shortcutLink = document.createElement('a');
+      shortcutLink.id = CLASSIC_HOME_SHORTCUT_LINK_ID;
+      shortcutLink.className = 'ku-course-menu-home-shortcut';
+      shortcutLink.setAttribute('role', 'button');
+      shortcutItem.appendChild(shortcutLink);
+
+      actionList.insertBefore(shortcutItem, refreshItem || actionList.firstChild);
+    }
+
+    const shortcutLink = shortcutItem.querySelector('a');
+    if (shortcutLink) {
+      const href = originalHome.getAttribute('href') || '#';
+      const title = originalHome.getAttribute('title') || 'Go to Course Entry Page';
+      shortcutLink.setAttribute('href', href);
+      shortcutLink.setAttribute('title', title);
+      shortcutLink.setAttribute('aria-label', title);
+
+      const target = originalHome.getAttribute('target');
+      if (target) {
+        shortcutLink.setAttribute('target', target);
+      } else {
+        shortcutLink.removeAttribute('target');
+      }
+
+      shortcutLink.innerHTML = `<span class="ku-course-menu-home-shortcut-icon" aria-hidden="true">${ICON_HOME}</span>`;
+    }
+
+    syncClassicCourseMenuHomeShortcutVisibility();
+    return true;
+  }
+
+  function initClassicCourseMenuHomeShortcut() {
+    if (ensureClassicCourseMenuHomeShortcut()) return;
+
+    const observer = new MutationObserver(() => {
+      ensureClassicCourseMenuHomeShortcut();
+    });
+
+    observer.observe(document.body, { childList: true, subtree: true });
+    setTimeout(() => observer.disconnect(), 30000);
   }
 
   function createButton() {
@@ -97,6 +182,7 @@
   function init() {
     applyDarkMode(loadPreference());
     window.addEventListener('storage', handleStorageSync);
+    initClassicCourseMenuHomeShortcut();
 
     if (!isTopWindow()) return;
 

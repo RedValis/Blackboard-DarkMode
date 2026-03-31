@@ -615,7 +615,9 @@ html.ku-dark-mode #courseMenuPalette a:focus-visible span {
 
 html.ku-dark-mode #courseMenuPalette_contents > li,
 html.ku-dark-mode #courseMenuPalette_contents > li > a {
-  background-color: transparent !important;
+  background: var(--ku-sidebar) !important;
+  background-color: var(--ku-sidebar) !important;
+  background-image: none !important;
   border-color: var(--ku-border) !important;
 }
 
@@ -626,10 +628,137 @@ html.ku-dark-mode #courseMenuPalette_contents > li[class*='current'] {
   background-color: var(--ku-sidebar-2) !important;
 }
 
+html.ku-dark-mode #courseMenuPalette_contents > li > a:hover,
+html.ku-dark-mode #courseMenuPalette_contents > li > a:focus-visible,
+html.ku-dark-mode #courseMenuPalette_contents > li:hover > a,
+html.ku-dark-mode #courseMenuPalette_contents > li:focus-within > a {
+  background: var(--ku-sidebar-2) !important;
+  background-color: var(--ku-sidebar-2) !important;
+  background-image: none !important;
+}
+
+html.ku-dark-mode #courseMenuPalette_contents > li > a > span,
+html.ku-dark-mode #courseMenu_link,
+html.ku-dark-mode #courseMenu_combo,
+html.ku-dark-mode .navPaletteContent a.comboLink,
+html.ku-dark-mode .navPaletteContent h3 a,
+html.ku-dark-mode .navPaletteContent h4 a.comboLink {
+  background-image: none !important;
+  text-shadow: none !important;
+}
+
 html.ku-dark-mode #courseMenuPalette_contents > li.divider,
 html.ku-dark-mode #courseMenuPalette_contents > li.divider hr {
+  background: var(--ku-sidebar) !important;
+  background-color: var(--ku-sidebar) !important;
+  background-image: none !important;
+  border-color: var(--ku-border) !important;
+}
+
+html.ku-dark-mode .navPaletteContent ul.courseMenu > li.divider,
+html.ku-dark-mode .listCm .courseMenu > li.divider,
+html.ku-dark-mode .buttonCm .courseMenu > li.divider,
+html.ku-dark-mode .navPaletteContent .navDivider,
+html.ku-dark-mode .dividerRow,
+html.ku-dark-mode .navPaletteContent li.divider {
+  background: var(--ku-sidebar) !important;
+  background-color: var(--ku-sidebar) !important;
+  background-image: none !important;
+  border-color: var(--ku-border) !important;
+}
+
+html.ku-dark-mode .navPaletteContent ul.courseMenu > li.divider hr,
+html.ku-dark-mode .listCm .courseMenu > li.divider hr,
+html.ku-dark-mode .buttonCm .courseMenu > li.divider hr,
+html.ku-dark-mode .navPaletteContent li.divider hr,
+html.ku-dark-mode .navPaletteContent hr {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border: 0 !important;
+  border-top: 1px solid var(--ku-border-strong) !important;
+  box-shadow: none !important;
+  height: 0 !important;
+  color: var(--ku-border-strong) !important;
+  opacity: 1 !important;
+}
+
+html.ku-dark-mode #courseMenuPalette .actionBarMicro,
+html.ku-dark-mode #courseMenuPalette .actionBarMicro ul,
+html.ku-dark-mode #courseMenuPalette .actionBarMicro li {
   background-color: transparent !important;
   border-color: var(--ku-border) !important;
+}
+
+html.ku-dark-mode #courseMenuPalette .actionBarMicro li.secondaryButton > a,
+html.ku-dark-mode #courseMenuPalette #homeicon,
+html.ku-dark-mode #courseMenu_combo {
+  background: var(--ku-surface-2) !important;
+  background-color: var(--ku-surface-2) !important;
+  background-image: none !important;
+  border-color: var(--ku-border) !important;
+  box-shadow: none !important;
+}
+
+html.ku-dark-mode #courseMenuPalette .actionBarMicro li.secondaryButton > a:hover,
+html.ku-dark-mode #courseMenuPalette .actionBarMicro li.secondaryButton > a:focus-visible,
+html.ku-dark-mode #courseMenuPalette #homeicon:hover,
+html.ku-dark-mode #courseMenuPalette #homeicon:focus-visible,
+html.ku-dark-mode #courseMenu_combo:hover,
+html.ku-dark-mode #courseMenu_combo:focus-visible {
+  background-color: var(--ku-surface-3) !important;
+  border-color: var(--ku-border-strong) !important;
+}
+
+html.ku-dark-mode #courseMenuPalette #homeicon[data-ku-homeicon-original='true'] {
+  display: none !important;
+}
+
+html.ku-dark-mode #courseMenuPalette .actionBarMicro li.ku-course-menu-home-shortcut-item {
+  background: transparent !important;
+  background-color: transparent !important;
+  border-color: var(--ku-border) !important;
+}
+
+html.ku-dark-mode #courseMenuPalette .actionBarMicro li.secondaryButton > a.ku-course-menu-home-shortcut {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-width: 18px !important;
+  min-height: 18px !important;
+  padding: 0.35rem 0.5rem !important;
+}
+
+html.ku-dark-mode #courseMenuPalette .actionBarMicro li.secondaryButton > a.ku-course-menu-home-shortcut .ku-course-menu-home-shortcut-icon,
+html.ku-dark-mode #courseMenuPalette .actionBarMicro li.secondaryButton > a.ku-course-menu-home-shortcut .ku-course-menu-home-icon {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: var(--ku-text-soft) !important;
+}
+
+html.ku-dark-mode #courseMenuPalette .actionBarMicro li.secondaryButton > a.ku-course-menu-home-shortcut .ku-course-menu-home-icon {
+  width: 14px !important;
+  height: 14px !important;
+}
+
+html.ku-dark-mode #courseMenuPalette .actionBarMicro li.secondaryButton > a.ku-course-menu-home-shortcut:hover .ku-course-menu-home-icon,
+html.ku-dark-mode #courseMenuPalette .actionBarMicro li.secondaryButton > a.ku-course-menu-home-shortcut:focus-visible .ku-course-menu-home-icon {
+  color: var(--ku-text) !important;
+}
+
+html.ku-dark-mode #courseMenuPalette .actionBarMicro li.secondaryButton > a span,
+html.ku-dark-mode #courseMenuPalette_contents > li > a > span,
+html.ku-dark-mode #courseMenuPalette_contents > li > a,
+html.ku-dark-mode #courseMenuPalette_contents > li > a:visited {
+  color: var(--ku-text-soft) !important;
+}
+
+html.ku-dark-mode #courseMenuPalette_contents > li > a:hover > span,
+html.ku-dark-mode #courseMenuPalette_contents > li > a:focus-visible > span,
+html.ku-dark-mode #courseMenuPalette_contents > li:hover > a > span,
+html.ku-dark-mode #courseMenuPalette_contents > li:focus-within > a > span {
+  color: var(--ku-link-hover) !important;
 }
 
 html.ku-dark-mode #contentPanel,
@@ -711,6 +840,47 @@ html.ku-dark-mode img.item_icon,
 html.ku-dark-mode #courseMenu_combo img,
 html.ku-dark-mode #courseMenuPalette .actionBarMicro img {
   filter: brightness(0) saturate(100%) invert(92%) sepia(11%) saturate(413%) hue-rotate(181deg) brightness(102%) contrast(96%) !important;
+}
+
+html.ku-dark-mode #courseMenuPalette #homeicon {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-width: 30px !important;
+  min-height: 30px !important;
+  vertical-align: middle !important;
+}
+
+html.ku-dark-mode #courseMenuPalette #homeicon::before {
+  content: "\2302";
+  color: var(--ku-text-soft) !important;
+  font-size: 16px !important;
+  line-height: 1 !important;
+}
+
+html.ku-dark-mode #courseMenuPalette #homeicon:hover::before,
+html.ku-dark-mode #courseMenuPalette #homeicon:focus-visible::before {
+  color: var(--ku-text) !important;
+}
+
+html.ku-dark-mode [data-analytics-id='course.header.home'] {
+  background-color: var(--ku-surface) !important;
+  border-color: var(--ku-border) !important;
+  color: var(--ku-text-soft) !important;
+  box-shadow: none !important;
+}
+
+html.ku-dark-mode [data-analytics-id='course.header.home']:hover,
+html.ku-dark-mode [data-analytics-id='course.header.home']:focus-visible {
+  background-color: var(--ku-surface-2) !important;
+  border-color: var(--ku-border-strong) !important;
+  color: var(--ku-text) !important;
+}
+
+html.ku-dark-mode [data-analytics-id='course.header.home'] svg,
+html.ku-dark-mode [data-analytics-id='course.header.home'] path {
+  color: var(--ku-text-soft) !important;
+  fill: currentColor !important;
 }
 
 html.ku-dark-mode .portalPane,
@@ -968,4 +1138,32 @@ html.ku-dark-mode .sortable_item_row.row.expanded:hover,
 html.ku-dark-mode .sortable_item_row.row.expanded:hover .cell {
   background-color: var(--ku-surface-2) !important;
   color: var(--ku-text) !important;
+}
+
+html.ku-dark-mode #containerdiv,
+html.ku-dark-mode .container.clearfix#containerdiv,
+html.ku-dark-mode .gradeTableNew,
+html.ku-dark-mode .gradeTableNew > div,
+html.ku-dark-mode .gradeTableNew > [role='rowgroup'],
+html.ku-dark-mode #grades_wrapper,
+html.ku-dark-mode #submissionReceipts,
+html.ku-dark-mode .receiptBarHorizontal {
+  background: var(--ku-surface) !important;
+  background-color: var(--ku-surface) !important;
+  background-image: none !important;
+  border-color: var(--ku-border) !important;
+  color: var(--ku-text-soft) !important;
+  box-shadow: none !important;
+}
+
+html.ku-dark-mode .grades_header,
+html.ku-dark-mode .grades_header .cell {
+  background-color: var(--ku-surface-2) !important;
+  border-color: var(--ku-border) !important;
+  color: var(--ku-text-soft) !important;
+  box-shadow: none !important;
+}
+
+html.ku-dark-mode .grades_header .cell[role='columnheader'] {
+  color: var(--ku-text-soft) !important;
 }
