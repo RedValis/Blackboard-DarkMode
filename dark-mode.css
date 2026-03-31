@@ -816,3 +816,32 @@ html.ku-dark-mode .menumini a:focus {
   background-color: var(--ku-surface-3) !important;
   color: var(--ku-text) !important;
 }
+
+html.ku-dark-mode #breadcrumbs,
+html.ku-dark-mode #breadcrumbs .path,
+html.ku-dark-mode #breadcrumbs .path ol,
+html.ku-dark-mode #breadcrumbs .breadcrumb-controls {
+  background-color: var(--ku-surface) !important;
+  border-color: var(--ku-border) !important;
+}
+
+html.ku-dark-mode #breadcrumbs a,
+html.ku-dark-mode #breadcrumbs span,
+html.ku-dark-mode #breadcrumbs li {
+  color: var(--ku-text-soft) !important;
+}
+
+html.ku-dark-mode .accordion_content,
+html.ku-dark-mode .accordion_content .noItems {
+  background-color: var(--ku-surface) !important;
+  color: var(--ku-text-soft) !important;
+}
+
+html.ku-dark-mode .accordion_content p.noItems,
+html.ku-dark-mode .portlet p.noItems,
+html.ku-dark-mode p.noItems#blocklist\:\:3-dueView\:\:\:\:\:3-dueView_1 {
+  background-color: var(--ku-surface) !important;
+  background-image: none !important;
+  color: var(--ku-text-soft) !important;
+  border-color: var(--ku-border) !important;
+}
