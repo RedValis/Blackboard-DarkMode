@@ -1,8 +1,3 @@
-/**
- * KU Elearn Dark Mode — minimal script
- * Only toggles a class and adds the sidebar switch.
- */
-
 (function () {
   'use strict';
 

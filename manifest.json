@@ -1,9 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "KU Elearn Dark Mode",
-  "short_name": "KU Dark Mode",
+  "name": "Blackboard Dark Mode",
+  "short_name": "BB Dark Mode",
   "version": "1.0.0",
-  "description": "A dark blue Blackboard Ultra theme for elearn.ku.ac.ae with a sidebar toggle.",
+  "description": "Dark Mode for Blackboard Ultra (elearn.ku.ac.ae)",
   "icons": {
     "16": "icons/icon16.png",
     "32": "icons/icon32.png",
@@ -26,7 +26,7 @@
     }
   ],
   "action": {
-    "default_title": "KU Elearn Dark Mode",
+    "default_title": "Blackboard Dark Mode",
     "default_icon": {
       "16": "icons/icon16.png",
       "32": "icons/icon32.png"
